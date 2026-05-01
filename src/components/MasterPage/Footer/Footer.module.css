@@ -1,0 +1,114 @@
+.footer {
+    margin-top: 80px;
+    padding: 25px 150px;
+    border-top: 1px solid #1f2937;
+    background: rgba(255, 255, 255, 0.01); /* toque moderno */
+}
+
+/* layout principal */
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* lado izquierdo */
+.left p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copy {
+    font-size: 0.75rem;
+}
+
+/* centro (referencia) */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor referencia */
+.reference {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* línea decorativa */
+.reference::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #374151;
+}
+
+/* link referencia */
+.reference a {
+    position: relative;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* underline animado */
+.reference a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #ff2d75;
+    transition: width 0.3s ease;
+}
+
+.reference a:hover {
+    color: #ffffff;
+}
+
+.reference a:hover::after {
+    width: 100%;
+}
+
+/* links derecha */
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    position: relative;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* hover links */
+.links a:hover {
+    color: #ffffff;
+}
+
+/* animación underline en links */
+.links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #ff2d75;
+    transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+    width: 100%;
+}

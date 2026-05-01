@@ -1,0 +1,96 @@
+p {
+    color: white;
+}
+
+
+.header {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 150px;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+
+}
+
+.IconProfile {
+    width: 40px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.IconVerifiqued {
+    width: 20px;
+    height: 20px;
+    padding-top: 8px;
+    margin: 2px;
+}
+
+.navigation {
+    display: flex;
+    margin-right: 150px;
+}
+
+.nameProfile {
+    padding-left: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+.nameProfile:hover {
+    color: aqua;
+
+}
+
+.number {
+    font-weight: bold;
+    opacity: 0.6; /* más sutil */
+}
+
+.sectionLink.active .number {
+    opacity: 1;
+}
+
+.sectionLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* mejor alineación */
+    gap: 4px; /* 1px es muy pegado, súbelo un poco */
+    margin: 10px;
+    cursor: pointer;
+    font-weight: normal;
+    position: relative;
+}
+
+.sectionLink span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #9ca3af;
+    /* gris */
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.sectionLink.active span {
+    color: #ffffff;
+    /* blanco cuando está activo */
+}
+
+.sectionLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* separación debajo del texto */
+    width: 0%;
+    height: 3px;
+    background: #ff2d75;
+    transition: width 0.3s ease;
+}
+
+.sectionLink.active::after {
+    width: 100%;
+}
