@@ -68,6 +68,7 @@
     gap: 40px;
     justify-content: flex-start;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 /* overlay SIEMPRE visible */
@@ -111,4 +112,52 @@
 .overlay h2,
 .overlay p {
     background: transparent !important;
+}
+
+
+/* contenedor */
+.containerButton {
+    display: flex;
+    margin-top: 25px;
+    
+}
+
+/* botón */
+.btnToggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid #ff2d75;
+    color: #ff2d75;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* texto */
+.textBtn {
+    font-size: 0.9rem;
+    background: none;
+}
+
+/* flecha */
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    background: none;
+}
+
+/* rotación */
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* hover */
+.btnToggle:hover {
+    background: #ff2d75;
+    color: white;
+    transform: translateY(-2px);
 }
